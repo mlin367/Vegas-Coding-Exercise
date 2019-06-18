@@ -1,0 +1,33 @@
+{
+  "name": "markup-exercise-master-c88611444bd5eecb282b1710180db114db95bf5b",
+  "version": "1.0.0",
+  "description": "Coding exercise for vegas.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlin367/Vegas-Coding-Exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlin367/Vegas-Coding-Exercise/issues"
+  },
+  "homepage": "https://github.com/mlin367/Vegas-Coding-Exercise#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "path": "^0.12.7",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
