@@ -4,7 +4,9 @@
   "description": "Coding exercise for vegas.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w",
+    "start": "nodemon simple-server/server.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
     "webpack-cli": "^3.3.4"
   },
   "dependencies": {
+    "axios": "^0.19.0",
+    "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

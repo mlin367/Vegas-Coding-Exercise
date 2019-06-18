@@ -6,7 +6,7 @@ const Header = props => (
       <div className="headerWrapping">
         <div className="headerWrapping1">
           <h1>{props.hotel.name}</h1>
-          <div>{props.hote.rating}</div>
+          <div>{props.hotel.rating}</div>
         </div>
         <div className="headerWrapping2">
           <span>Strip</span>
