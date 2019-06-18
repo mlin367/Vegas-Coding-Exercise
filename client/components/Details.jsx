@@ -20,7 +20,7 @@ class Details extends React.Component {
           {this.props.details.map((detail, i) => (
             <div key={i} className="detailText">
               <span>{detail.label}</span>
-              <span>{detail.value}</span>
+              <span>${detail.value}</span>
             </div>
           ))}
         </div>

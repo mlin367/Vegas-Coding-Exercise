@@ -9,7 +9,7 @@ const Header = props => (
           <div>{props.hotel.rating}</div>
         </div>
         <div className="headerWrapping2">
-          <span>Strip</span>
+          <span onClick={props.onTabClick} className="location">Strip</span>
           <span>{props.hotel.phoneNumber}</span>
           <span>Best Price Guarantee</span>
         </div>

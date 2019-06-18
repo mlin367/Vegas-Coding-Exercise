@@ -3,6 +3,7 @@ import Header from './Header';
 import Description from './Description';
 import Details from './Details';
 import Location from './Location';
+import HotelList from './HotelList';
 import axios from 'axios';
 
 class App extends React.Component {
@@ -10,7 +11,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       view: 'description',
-      hotel: {}
+      hotel: {},
+      list: []
     };
     this.getData = this.getData.bind(this);
     this.onTabClick = this.onTabClick.bind(this);
@@ -26,6 +28,20 @@ class App extends React.Component {
         hotel: result.data
       });
     });
+    axios.get('/api/hotels').then(result => {
+      let list = [];
+      let duplicates = {};
+      for (let obj of result.data.list) {
+        if (!duplicates[obj.name]) {
+          duplicates[obj.name] = 1;
+          list.push(obj);
+        }
+      }
+      list.sort((a, b) => a.name.localeCompare(b.name));
+      this.setState({
+        list
+      })
+    })
   }
 
   onTabClick(e) {
@@ -40,11 +56,8 @@ class App extends React.Component {
         <span>SEE ALL LAS VEGAS HOTELS</span>
         <div className="appWrapper">
           <div className="leftCol">
-            <img
-              src={
-                this.state.hotel.media ? this.state.hotel.media[0].href : null
-              }
-            ></img>
+            <img src={this.state.hotel.media ? this.state.hotel.media[0].href : null} />
+            <HotelList hotels={this.state.list}/>
           </div>
           <div className="rightCol">
             <Header onTabClick={this.onTabClick} hotel={this.state.hotel} />
