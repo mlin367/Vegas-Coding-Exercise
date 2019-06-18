@@ -53,7 +53,7 @@ class App extends React.Component {
             ) : this.state.view === 'details' ? (
               <Details details={this.state.hotel.details}/>
             ) : (
-              <Location />
+              <Location address={this.state.hotel.location.address} map={this.state.hotel.media ? this.state.hotel.media[1].href : null}/>
             )}
           </div>
         </div>
