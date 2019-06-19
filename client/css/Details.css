@@ -10,12 +10,12 @@
   margin-left: 23px;
 }
 
-.more, .less {
+.more, .fewer {
   color: #895e95;
   cursor: pointer;
 }
 
-.more:hover, .less:hover {
+.more:hover, .fewer:hover {
   text-decoration-line: underline;
 }
 

@@ -16,9 +16,9 @@ class Details extends React.Component {
         <i class="fas fa-chevron-circle-down fa-xs"></i>
       </div>
     );
-    const less = (
-      <div className="less" onClick={() => this.setState({ collapse: true })}>
-        <span>VIEW LESS DETAILS </span>
+    const fewer = (
+      <div className="fewer" onClick={() => this.setState({ collapse: true })}>
+        <span>VIEW FEWER DETAILS </span>
         <i class="fas fa-chevron-circle-up fa-xs"></i>
       </div>
     );
@@ -33,7 +33,7 @@ class Details extends React.Component {
             </div>
           ))}
         </div>
-        {this.state.collapse ? more : less}
+        {this.state.collapse ? more : fewer}
       </div>
     );
   }

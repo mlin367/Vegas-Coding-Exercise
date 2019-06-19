@@ -22,7 +22,7 @@ const Header = props => (
           </div>
         </div>
         <div className="headerWrapping2">
-          <div>
+          <div className="strip">
             <i class="fas fa-map-marker-alt fa-xs"></i>
             <span className="headerSpan" onClick={props.onTabClick} id="location">Strip</span>
           </div>
