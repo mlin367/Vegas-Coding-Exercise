@@ -1,9 +1,12 @@
 import React from 'react';
-import '../css/Location.css'
+import '../css/Location.css';
 
 const Location = props => (
   <div className="locationClass">
-    <span>{props.address}</span>
+    <div>
+      <i class="fas fa-map-marker-alt fa-sm"></i>
+      <span className="locationSpan">{props.address}</span>
+    </div>
     <img className="map" src={props.map}></img>
   </div>
 );

@@ -10,9 +10,18 @@ const Header = props => (
           <div>{props.hotel.rating}</div>
         </div>
         <div className="headerWrapping2">
-          <span onClick={props.onTabClick} id="location">Strip</span>
-          <span>{props.hotel.phoneNumber}</span>
-          <span>Best Price Guarantee</span>
+          <div>
+            <i class="fas fa-map-marker-alt fa-xs"></i>
+            <span className="headerSpan" onClick={props.onTabClick} id="location">Strip</span>
+          </div>
+          <div>
+            <i class="fas fa-phone-alt fa-xs"></i>
+            <span className="headerSpan">{props.hotel.phoneNumber}</span>
+          </div>
+          <div>
+            <i class="fas fa-thumbs-up fa-xs"></i>
+            <span className="headerSpan">Best Price Guarantee</span>
+          </div>
         </div>
       </div>
       <div className="priceWrapper">

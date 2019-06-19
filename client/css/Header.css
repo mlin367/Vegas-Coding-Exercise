@@ -10,7 +10,21 @@ h1 {
   justify-content: space-between;
 }
 
+.headerSpan {
+  margin-left: 5px;
+}
+
+.headerWrapping {
+  width: 50%;
+  color: #6b6c7a;
+}
+
 .headerWrapping0 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerWrapping2 {
   display: flex;
   justify-content: space-between;
 }

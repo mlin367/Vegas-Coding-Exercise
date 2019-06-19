@@ -6,13 +6,22 @@ class Details extends React.Component {
     super(props);
     this.state = {
       collapse: true
-    }
+    };
   }
 
   render() {
-
-    const more = <div onClick={() => this.setState({ collapse: false })}>VIEW MORE DETAILS</div>;
-    const less = <div onClick={() => this.setState({ collapse: true })}>VIEW LESS DETAILS</div>;
+    const more = (
+      <div className="more" onClick={() => this.setState({ collapse: false })}>
+        <span>VIEW MORE DETAILS </span>
+        <i class="fas fa-chevron-circle-down fa-xs"></i>
+      </div>
+    );
+    const less = (
+      <div className="less" onClick={() => this.setState({ collapse: true })}>
+        <span>VIEW LESS DETAILS </span>
+        <i class="fas fa-chevron-circle-up fa-xs"></i>
+      </div>
+    );
 
     return (
       <div className="detailsClass">
@@ -24,9 +33,9 @@ class Details extends React.Component {
             </div>
           ))}
         </div>
-        {this.state.collapse ? more: less}
+        {this.state.collapse ? more : less}
       </div>
-    )
+    );
   }
 }
 

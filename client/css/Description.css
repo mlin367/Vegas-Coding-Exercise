@@ -6,3 +6,12 @@
 .descriptionClass {
   width: 700px;
 }
+
+.hide, .show {
+  color: #895e95;
+  cursor: pointer;
+}
+
+.hide:hover, .show:hover {
+  text-decoration-line: underline;
+}

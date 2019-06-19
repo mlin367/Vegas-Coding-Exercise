@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: column;
   width: 700px;
+  margin-top: 20px;
 }
 
 .map {
   width: 654px;
   height: 604px;
+}
+
+.locationSpan {
+  margin-left: 5px;
 }

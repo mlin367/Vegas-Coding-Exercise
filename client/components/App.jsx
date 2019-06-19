@@ -54,7 +54,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <span>SEE ALL LAS VEGAS HOTELS</span>
+        <span className="seeAll">
+        <i class="fas fa-chevron-circle-left fa-xs"></i>
+          SEE ALL LAS VEGAS HOTELS
+          </span>
         <div className="appWrapper">
           <div className="leftCol">
             <img className="hotelImg" src={this.state.hotel.media ? this.state.hotel.media[0].href : null} />
