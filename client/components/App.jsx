@@ -57,7 +57,7 @@ class App extends React.Component {
         <span>SEE ALL LAS VEGAS HOTELS</span>
         <div className="appWrapper">
           <div className="leftCol">
-            <img src={this.state.hotel.media ? this.state.hotel.media[0].href : null} />
+            <img className="hotelImg" src={this.state.hotel.media ? this.state.hotel.media[0].href : null} />
             <HotelList hotels={this.state.list}/>
           </div>
           <div className="rightCol">

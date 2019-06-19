@@ -7,6 +7,10 @@
   font-family: icons;
 } */
 
+html {
+  overflow-y: scroll;
+}
+
 #root {
   display: flex;
   justify-content: center;
@@ -18,8 +22,13 @@ body {
 
 .appWrapper {
   display: flex;
+  margin-top: 20px;
 }
 
 .leftCol {
   margin-right: 30px;
+}
+
+.hotelImg {
+  margin-bottom: 25px;
 }

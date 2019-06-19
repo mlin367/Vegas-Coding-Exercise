@@ -1,0 +1,18 @@
+h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.headerWrapping0 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+}
