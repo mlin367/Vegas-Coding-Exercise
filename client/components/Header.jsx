@@ -1,13 +1,25 @@
 import React from 'react';
 import '../css/Header.css';
 
+const convertRating = rating => {
+  let result = [];
+  for (let i = 0; i < Math.ceil(rating); i++) {
+    result.push(1);
+  }
+  return result;
+}
+
 const Header = props => (
   <div className="header">
     <div className="headerWrapping0">
       <div className="headerWrapping">
         <div className="headerWrapping1">
           <h1>{props.hotel.name}</h1>
-          <div>{props.hotel.rating}</div>
+          <div className="rating">
+            {convertRating(props.hotel.starRating).map(rating => (
+              <i key={Math.random()} class="fas fa-star fa-sm"></i>
+            ))}
+          </div>
         </div>
         <div className="headerWrapping2">
           <div>

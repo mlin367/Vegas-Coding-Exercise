@@ -3,9 +3,11 @@
   src: url('icons.woff');
 
 }
+ */
+
 .app {
-  font-family: icons;
-} */
+  font-family: 'Lato', sans-serif;
+}
 
 html {
   overflow-y: scroll;

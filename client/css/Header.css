@@ -2,6 +2,7 @@ h1 {
   margin-top: 0;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-weight: 100;
 }
 
 .header {
@@ -17,7 +18,7 @@ h1 {
 }
 
 .headerWrapping {
-  width: 50%;
+  width: 55%;
   color: #6b6c7a;
 }
 
@@ -26,9 +27,19 @@ h1 {
   justify-content: space-between;
 }
 
+.headerWrapping1 {
+  display: flex;
+  align-items: center;
+}
+
 .headerWrapping2 {
   display: flex;
   justify-content: space-between;
+}
+
+.rating {
+  margin-left: 10px;
+  color: #aeaaae;
 }
 
 .priceWrapper {
@@ -42,7 +53,9 @@ h1 {
   justify-content: space-between;
 }
 
-.description, .details, .location {
+.description,
+.details,
+.location {
   width: 33.33%;
   text-align: center;
   display: flex;
@@ -54,7 +67,9 @@ h1 {
   cursor: pointer;
 }
 
- .description:hover, .details:hover, .location:hover {
+.description:hover,
+.details:hover,
+.location:hover {
   color: white;
   border-bottom: 3px solid #e5c5eb;
 }
