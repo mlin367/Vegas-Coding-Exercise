@@ -47,7 +47,7 @@ class App extends React.Component {
 
   onTabClick(e) {
     this.setState({
-      view: e.target.className
+      view: e.target.id
     });
   }
 
@@ -61,7 +61,7 @@ class App extends React.Component {
             <HotelList hotels={this.state.list}/>
           </div>
           <div className="rightCol">
-            <Header onTabClick={this.onTabClick} hotel={this.state.hotel} />
+            <Header view={this.state.view} onTabClick={this.onTabClick} hotel={this.state.hotel} />
             {this.state.view === 'description' ? (
               <Description description={this.state.hotel.description} />
             ) : this.state.view === 'details' ? (

@@ -3,6 +3,13 @@ h1 {
   text-transform: uppercase;
 }
 
+.header {
+  height: 173px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .headerWrapping0 {
   display: flex;
   justify-content: space-between;
@@ -14,5 +21,33 @@ h1 {
 }
 
 .tabs {
+  height: 50px;
   display: flex;
+  justify-content: space-between;
+}
+
+.description, .details, .location {
+  width: 33.33%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #895e95;
+  border-bottom: 3px solid #895e95;
+  color: #ffffff87;
+  cursor: pointer;
+}
+
+ .description:hover, .details:hover, .location:hover {
+  color: white;
+  border-bottom: 3px solid #e5c5eb;
+}
+
+.focus {
+  color: white;
+  border-bottom: 3px solid #733080;
+}
+
+.focus:hover {
+  border-bottom: 3px solid #733080;
 }
