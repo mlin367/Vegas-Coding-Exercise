@@ -5,14 +5,14 @@ module.exports = {
   entry: path.resolve(__dirname, './client'),
   output: {
     path: path.resolve(__dirname, './public'),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
   module: {
     rules: [
       {
         loader: 'babel-loader',
         test: /\.js[x]?$/,
-        exclude: /node_modules/,
+        exclude: /node_modules/
       },
       {
         test: /\.(css)$/,
@@ -20,12 +20,16 @@ module.exports = {
           { loader: 'style-loader' },
           {
             loader: 'css-loader'
-          },
+          }
         ]
       },
+      {
+        test: /\.(woff|woff2|ttf|otf)$/,
+        loader: 'file-loader',
+      }
     ]
   },
   resolve: {
     extensions: ['.js', '.jsx']
-  },
+  }
 };

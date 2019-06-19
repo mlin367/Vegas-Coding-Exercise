@@ -1,0 +1,25 @@
+/* @font-face {
+  font-family: 'icons';
+  src: url('icons.woff');
+
+}
+.app {
+  font-family: icons;
+} */
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 15px;
+}
+
+.appWrapper {
+  display: flex;
+}
+
+.leftCol {
+  margin-right: 30px;
+}

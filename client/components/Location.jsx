@@ -1,4 +1,5 @@
 import React from 'react';
+import '../css/Location.css'
 
 const Location = props => (
   <div className="locationClass">

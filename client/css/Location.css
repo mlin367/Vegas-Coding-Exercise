@@ -1,9 +1,5 @@
-.detailText {
+.locationClass {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.detailsClass {
   width: 700px;
 }

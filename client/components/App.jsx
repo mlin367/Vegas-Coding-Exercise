@@ -5,6 +5,7 @@ import Details from './Details';
 import Location from './Location';
 import HotelList from './HotelList';
 import axios from 'axios';
+import '../css/App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -66,7 +67,7 @@ class App extends React.Component {
             ) : this.state.view === 'details' ? (
               <Details details={this.state.hotel.details}/>
             ) : (
-              <Location address={this.state.hotel.location.address} map={this.state.hotel.media ? this.state.hotel.media[1].href : null}/>
+              <Location address={this.state.hotel.location.address} map={this.state.hotel.media[1].href}/>
             )}
           </div>
         </div>
