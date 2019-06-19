@@ -28,7 +28,7 @@ class Details extends React.Component {
         <div className={`${this.state.collapse ? 'collapse' : 'extend'}`}>
           {this.props.details.map((detail, i) => (
             <div key={i} className="detailText">
-              <span>{detail.label}</span>
+              <span className="label">{detail.label}</span>
               <span>{detail.value}</span>
             </div>
           ))}

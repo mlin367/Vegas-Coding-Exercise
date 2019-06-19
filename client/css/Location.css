@@ -1,8 +1,9 @@
 .locationClass {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  width: 654px;
   margin-top: 20px;
+  margin-left: 23px;
 }
 
 .map {

@@ -9,6 +9,7 @@
 }
 
 .hotelListEntry {
+  color: #6b6c7a;
   display: flex;
   justify-content: space-between;
 }

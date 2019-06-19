@@ -25,7 +25,7 @@ const Header = props => (
         </div>
       </div>
       <div className="priceWrapper">
-        <span className="price">{props.hotel.price}</span>
+        <span className="price">${props.hotel.price}</span>
         <span>HOTEL ROOMS FROM</span>
       </div>
     </div>

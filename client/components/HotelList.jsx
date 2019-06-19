@@ -6,7 +6,7 @@ const HotelList = props => (
     {props.hotels.map(hotel => (
       <div key={Math.random()} className="hotelListEntry">
         <span className="hotelName">{hotel.name}</span>
-        <span>${hotel.price}</span>
+        <span>${hotel.price.toFixed(2)}</span>
       </div>
     ))}
   </div>

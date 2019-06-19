@@ -5,7 +5,9 @@
 }
 
 .detailsClass {
-  width: 700px;
+  width: 654px;
+  margin-top: 20px;
+  margin-left: 23px;
 }
 
 .more, .less {
@@ -15,4 +17,8 @@
 
 .more:hover, .less:hover {
   text-decoration-line: underline;
+}
+
+.label {
+  font-weight: 700;
 }
