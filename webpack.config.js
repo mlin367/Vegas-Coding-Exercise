@@ -22,10 +22,6 @@ module.exports = {
             loader: 'css-loader'
           }
         ]
-      },
-      {
-        test: /\.(woff|woff2|ttf|otf)$/,
-        loader: 'file-loader',
       }
     ]
   },
